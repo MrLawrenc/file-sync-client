@@ -20,10 +20,10 @@ func main() {
 
 	//watch file
 	watcher, err := fsnotify.NewWatcher()
-/*	if err != nil {
+	/*	if err != nil {
 		log.Fatal("NewWatcher failed: ", err)
 	}*/
-	utils.PrintError(err,false)
+	utils.PrintError(err, false)
 
 	defer watcher.Close()
 
